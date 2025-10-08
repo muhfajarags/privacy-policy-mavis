@@ -1,0 +1,233 @@
+# Write the revised Privacy Policy HTML to the uploaded file path
+html = """<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Privacy Policy – Mavis Summarize</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: '#7140f4',
+            ink: '#0f172a'
+          },
+          fontFamily: {
+            ui: ['ui-sans-serif', 'system-ui', '-apple-system', 'Segoe UI', 'Roboto', 'Inter', 'Arial', 'sans-serif']
+          },
+          boxShadow: {
+            'soft': '0 1px 2px rgba(2,6,23,0.04), 0 8px 24px rgba(2,6,23,0.06)'
+          },
+          maxWidth: {
+            'sheet': '880px'
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    ::selection{background:#ede9fe;color:#1e1b4b}
+  </style>
+</head>
+<body class="bg-white text-ink antialiased font-ui">
+  <div class="mx-auto max-w-sheet px-5 md:px-8 lg:px-10">
+    <!-- Header -->
+    <header class="pt-10 pb-6">
+      <div class="flex items-center gap-3">
+        <span class="inline-flex h-9 w-9 items-center justify-center rounded-full bg-brand/10">
+          <svg viewBox="0 0 24 24" class="h-5 w-5 text-brand" fill="currentColor" aria-hidden="true">
+            <path d="M12 3a1 1 0 0 1 .894.553l1.9 3.8 4.193.61a1 1 0 0 1 .554 1.704l-3.03 2.953.716 4.173a1 1 0 0 1-1.452 1.054L12 16.9l-3.775 1.986a1 1 0 0 1-1.452-1.054l.716-4.173-3.03-2.953a1 1 0 0 1 .554-1.704l4.193-.61 1.9-3.8A1 1 0 0 1 12 3z"/>
+          </svg>
+        </span>
+        <div>
+          <h1 class="text-2xl md:text-3xl font-semibold tracking-tight">Privacy Policy</h1>
+          <p class="text-sm text-slate-500">Effective date: <strong class="text-slate-700">08 October 2025</strong> • App: <strong class="text-slate-700">Mavis Summarize</strong> (Chrome extension)</p>
+          <p class="text-xs text-slate-400">Version reference: 0.0.4 (policy updated to reflect stateless/no-local-storage behavior)</p>
+        </div>
+      </div>
+    </header>
+
+    <!-- Nav -->
+    <nav aria-label="Sections" class="mb-8">
+      <div class="flex flex-wrap gap-2">
+        <a href="#scope" class="px-3 py-1.5 rounded-md border border-slate-200 text-sm text-slate-700 hover:border-brand/50 hover:text-brand transition">Scope</a>
+        <a href="#data-we-collect" class="px-3 py-1.5 rounded-md border border-slate-200 text-sm text-slate-700 hover:border-brand/50 hover:text-brand transition">Data We Collect</a>
+        <a href="#how-we-use" class="px-3 py-1.5 rounded-md border border-slate-200 text-sm text-slate-700 hover:border-brand/50 hover:text-brand transition">How We Use</a>
+        <a href="#sharing" class="px-3 py-1.5 rounded-md border border-slate-200 text-sm text-slate-700 hover:border-brand/50 hover:text-brand transition">Sharing</a>
+        <a href="#retention" class="px-3 py-1.5 rounded-md border border-slate-200 text-sm text-slate-700 hover:border-brand/50 hover:text-brand transition">Retention</a>
+        <a href="#security" class="px-3 py-1.5 rounded-md border border-slate-200 text-sm text-slate-700 hover:border-brand/50 hover:text-brand transition">Security</a>
+        <a href="#choices" class="px-3 py-1.5 rounded-md border border-slate-200 text-sm text-slate-700 hover:border-brand/50 hover:text-brand transition">Your Choices</a>
+        <a href="#rights" class="px-3 py-1.5 rounded-md border border-slate-200 text-sm text-slate-700 hover:border-brand/50 hover:text-brand transition">Regional Rights</a>
+        <a href="#children" class="px-3 py-1.5 rounded-md border border-slate-200 text-sm text-slate-700 hover:border-brand/50 hover:text-brand transition">Children</a>
+        <a href="#changes" class="px-3 py-1.5 rounded-md border border-slate-200 text-sm text-slate-700 hover:border-brand/50 hover:text-brand transition">Changes</a>
+        <a href="#contact" class="px-3 py-1.5 rounded-md border border-slate-200 text-sm text-slate-700 hover:border-brand/50 hover:text-brand transition">Contact</a>
+      </div>
+    </nav>
+
+    <!-- Body -->
+    <main class="space-y-6">
+      <!-- Card helper -->
+      <!-- Each section is a white card with soft shadow and subtle border -->
+      <section id="scope" class="bg-white border border-slate-200 rounded-xl shadow-soft p-6">
+        <h2 class="text-xl font-semibold tracking-tight mb-2">1) Scope</h2>
+        <p class="text-slate-700">
+          This Privacy Policy explains how <span class="font-medium">Mavis Summarize</span> collects, uses, and safeguards information when you use our Chrome extension to summarize content in your browser.
+        </p>
+        <p class="text-slate-700 mt-3">
+          We comply with the <span class="font-medium">Chrome Web Store User Data Policy</span>. We do <em>not</em> sell your data; we do <em>not</em> use or transfer data for purposes unrelated to core functionality; and we do <em>not</em> use or transfer data to determine creditworthiness or for lending purposes.
+        </p>
+        <p class="text-slate-700 mt-3">
+          <span class="font-semibold">Stateless design (no local storage):</span> this extension does <em>not</em> write any information to your browser’s local storage, sync storage, cookies, or IndexedDB. The extension does not keep a “history” or “pinned summaries” locally, and it does not persist local settings. Each session starts fresh.
+        </p>
+      </section>
+
+      <section id="data-we-collect" class="bg-white border border-slate-200 rounded-xl shadow-soft p-6">
+        <h2 class="text-xl font-semibold tracking-tight mb-2">2) Data We Collect</h2>
+
+        <h3 class="text-base font-semibold mt-3">2.1 Account & Authentication (PII limited to login/register)</h3>
+        <ul class="list-disc pl-5 text-slate-700">
+          <li><span class="font-medium">Personally identifiable information (PII)</span> is limited to what is necessary for <span class="font-medium">login and registration</span>. We do not collect other PII for extension use.</li>
+        </ul>
+
+        <h3 class="text-base font-semibold mt-4">2.2 Data processed to provide core functionality</h3>
+        <ul class="list-disc pl-5 text-slate-700">
+          <li><span class="font-medium">Website content you select</span>: text you highlight or the page content you explicitly request to summarize. This content is processed transiently and may be transmitted to AI model providers strictly to generate a summary.</li>
+          <li><span class="font-medium">Runtime diagnostics (minimal)</span>: non-identifying error codes and performance signals may be generated in-memory to keep the feature working. These signals are not stored locally by the extension.</li>
+        </ul>
+
+        <h3 class="text-base font-semibold mt-4">2.3 No Local Storage</h3>
+        <p class="text-slate-700">
+          The extension does not save history, preferences, or any other data locally. We do not use <code>chrome.storage</code>, cookies, IndexedDB, or other local persistence mechanisms.
+        </p>
+      </section>
+
+      <section id="how-we-use" class="bg-white border border-slate-200 rounded-xl shadow-soft p-6">
+        <h2 class="text-xl font-semibold tracking-tight mb-2">3) How We Use Data</h2>
+        <ul class="list-disc pl-5 text-slate-700">
+          <li><span class="font-medium">Provide core features</span>: generate summaries using one or more AI models.</li>
+          <li><span class="font-medium">Service reliability</span>: maintain performance and security with minimal, non-identifying diagnostics.</li>
+          <li><span class="font-medium">Account operations</span>: authenticate you for login/register if those features are used.</li>
+        </ul>
+
+        <h3 class="text-base font-semibold mt-4">AI Model Processing</h3>
+        <p class="text-slate-700">
+          To generate summaries, selected content may be sent to <span class="font-medium">third-party AI model providers</span> (or routed via a secure proxy). We transmit only the minimum necessary text to fulfill your request and instruct providers to process it solely for summarization and not to use it for training where such controls are available.
+        </p>
+      </section>
+
+      <section id="sharing" class="bg-white border border-slate-200 rounded-xl shadow-soft p-6">
+        <h2 class="text-xl font-semibold tracking-tight mb-2">4) Sharing & International Transfers</h2>
+        <ul class="list-disc pl-5 text-slate-700">
+          <li><span class="font-medium">No sale of data.</span></li>
+          <li><span class="font-medium">No sharing for unrelated purposes</span> beyond core functionality.</li>
+          <li><span class="font-medium">Service providers & AI vendors</span>: data may be shared with hosting and AI model providers to operate the service under strict contractual safeguards.</li>
+          <li><span class="font-medium">Legal & safety</span>: information may be disclosed if required by law or to protect rights, safety, or service integrity.</li>
+          <li><span class="font-medium">Transfers</span>: where cross-border processing occurs, appropriate safeguards are applied when required.</li>
+        </ul>
+      </section>
+
+      <section id="retention" class="bg-white border border-slate-200 rounded-xl shadow-soft p-6">
+        <h2 class="text-xl font-semibold tracking-tight mb-2">5) Data Retention</h2>
+        <ul class="list-disc pl-5 text-slate-700">
+          <li><span class="font-medium">Summarized content</span>: processed transiently to generate output; not retained by the extension and not stored locally.</li>
+          <li><span class="font-medium">Account data</span>: minimal PII for login/register is retained only as long as needed for authentication and legal compliance.</li>
+          <li><span class="font-medium">Diagnostics</span>: if any server-side logs are generated, they are limited, non-identifying, and retained only briefly for reliability and security.</li>
+        </ul>
+      </section>
+
+      <section id="security" class="bg-white border border-slate-200 rounded-xl shadow-soft p-6">
+        <h2 class="text-xl font-semibold tracking-tight mb-2">6) Security</h2>
+        <p class="text-slate-700">
+          We apply administrative, organizational, and technical measures designed to safeguard information, including transport encryption and data minimization. No method of transmission or storage is 100% secure; we continuously improve our controls.
+        </p>
+      </section>
+
+      <section id="choices" class="bg-white border border-slate-200 rounded-xl shadow-soft p-6">
+        <h2 class="text-xl font-semibold tracking-tight mb-2">7) Your Choices & Controls</h2>
+        <ul class="list-disc pl-5 text-slate-700">
+          <li><span class="font-medium">Authentication</span>: you may choose to log in/register (if offered); PII is limited to what is necessary for that purpose.</li>
+          <li><span class="font-medium">Model usage</span>: you can choose whether to use the summarization feature at all; when used, content is processed transiently.</li>
+          <li><span class="font-medium">Uninstall</span>: remove the extension anytime via <code class="rounded bg-slate-50 border border-slate-200 px-1.5 py-0.5">chrome://extensions</code>.</li>
+        </ul>
+        <p class="mt-2 text-slate-500">Note: Because the extension is stateless, there are no local settings or local history to configure or delete.</p>
+      </section>
+
+      <section id="rights" class="bg-white border border-slate-200 rounded-xl shadow-soft p-6">
+        <h2 class="text-xl font-semibold tracking-tight mb-2">8) Regional Privacy Rights</h2>
+        <p class="text-slate-500">Depending on your location, you may have certain rights over your personal data.</p>
+
+        <h3 class="text-base font-semibold mt-3">EU/EEA & UK (GDPR/UK GDPR)</h3>
+        <ul class="list-disc pl-5 text-slate-700">
+          <li><span class="font-medium">Controller</span>: Mavis Summarize (see contact below).</li>
+          <li><span class="font-medium">Legal bases</span>: performance of a contract; legitimate interests (operate and secure the service); consent where required.</li>
+          <li><span class="font-medium">Rights</span>: access, rectification, erasure, restriction, portability, objection, and withdrawal of consent.</li>
+          <li><span class="font-medium">Complaints</span>: you may contact your local supervisory authority.</li>
+        </ul>
+
+        <h3 class="text-base font-semibold mt-4">California (CCPA/CPRA)</h3>
+        <ul class="list-disc pl-5 text-slate-700">
+          <li><span class="font-medium">Rights</span>: know, access, delete, correct, and opt-out of “sale”/“sharing” of personal information. We do not “sell” personal information.</li>
+        </ul>
+
+        <h3 class="text-base font-semibold mt-4">Other Regions (e.g., Brazil LGPD, Singapore PDPA, Indonesia PDP Law)</h3>
+        <ul class="list-disc pl-5 text-slate-700">
+          <li>We honor applicable local rights, including access, correction, deletion, and consent withdrawal where required.</li>
+        </ul>
+
+        <p class="text-slate-700 mt-2">
+          To exercise rights, please see <a href="#contact" class="text-brand hover:underline">Contact</a>. We may need to verify your identity before fulfilling requests.
+        </p>
+      </section>
+
+      <section id="children" class="bg-white border border-slate-200 rounded-xl shadow-soft p-6">
+        <h2 class="text-xl font-semibold tracking-tight mb-2">9) Children’s Privacy</h2>
+        <p class="text-slate-700">
+          Our extension is not directed to children. We do not knowingly collect personal information from children. If you believe a child has provided personal information, please contact us and we will take appropriate steps.
+        </p>
+      </section>
+
+      <section id="changes" class="bg-white border border-slate-200 rounded-xl shadow-soft p-6">
+        <h2 class="text-xl font-semibold tracking-tight mb-2">10) Changes to This Policy</h2>
+        <p class="text-slate-700">
+          We may update this Privacy Policy from time to time. We will revise the “Effective date” above and, where required, provide additional notice (e.g., within the extension UI or listing).
+        </p>
+      </section>
+
+      <section id="contact" class="bg-white border border-slate-200 rounded-xl shadow-soft p-6">
+        <h2 class="text-xl font-semibold tracking-tight mb-2">11) Contact Us</h2>
+        <address class="not-italic leading-7 text-slate-700">
+          <div><span class="font-medium">Mavis Summarize – Privacy</span></div>
+          <div>Email: <a href="mailto:bccfilkom@ub.ac.id" class="text-brand hover:underline">bccfilkom@ub.ac.id</a></div>
+          <div>Developer (Chrome Web Store “Offered by”): <span class="font-medium">BCC FILKOM</span></div>
+        </address>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="mt-8 border-t border-slate-200 pt-5 pb-12">
+      <p class="text-sm text-slate-500">
+        Declarative disclosures for Chrome Web Store:
+        The extension does not use local storage, cookies, or IndexedDB; no local history or settings are persisted.
+        Personally identifiable information is limited to login/register only.
+        Website content you select is processed transiently to provide core summarization functionality. Data is not sold and is not used or transferred for purposes unrelated to core functionality, nor to determine creditworthiness or for lending purposes.
+      </p>
+      <div class="mt-4">
+        <a href="#scope" class="inline-flex items-center gap-2 rounded-lg border border-brand/20 bg-brand/5 px-3 py-2 text-sm font-medium text-brand hover:bg-brand/10 transition">
+          Back to top
+          <svg viewBox="0 0 24 24" class="h-4 w-4" fill="currentColor" aria-hidden="true">
+            <path d="M12 5c.28 0 .53.11.71.29l6 6a1 1 0 1 1-1.42 1.42L13 9.41V19a1 1 0 1 1-2 0V9.41l-4.29 4.3A 1 1 0 0 1 5.3 11.3l6-6A1 1 0 0 1 12 5z"/>
+          </svg>
+        </a>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
+"""
+with open("/mnt/data/index.html", "w", encoding="utf-8") as f:
+    f.write(html)
+print("Saved revised Privacy Policy to /mnt/data/index.html")
